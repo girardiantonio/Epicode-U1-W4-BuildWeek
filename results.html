@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/reset.css" />
+    <link rel="stylesheet" href="assets/CSS/results.css" />
+  </head>
+  <body>
+    <div class="container-results">
+      <header id="logo">
+        <img class="logo" src="assets/images/epicode_logo.png" alt="logo" />
+      </header>
+      <main>
+        <section>
+          <h1 class="text-results-h1">Results</h1>
+          <h5 class="text-results-h5">The summary of your answers:</h5>
+        </section>
+        <section id="section-percentage">
+          <div id="correct">
+            <h1>Correct <br /><span id="correct-percentage"></span></h1>
+            <h5 class="question-correct">
+              <span id="correct-number"></span>questions
+            </h5>
+          </div>
+          <div id="chart">
+            <canvas id="myChart"> </canvas>
+            <form id="rate-us">
+              <button id="button-rate-us" type="submit">RATE US</button>
+            </form>
+          </div>
+          <div id="wrong">
+            <h1>Wrong<br /><span id="wrong-percentage"></span></h1>
+            <h5 class="question-wrong">
+              <span id="wrong-number"></span>questions
+            </h5>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/results.js"></script>
+
+    <script></script>
+  </body>
+</html>
